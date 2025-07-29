@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BDFEFF3E2E392708000427CF /* QuotesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF3D2E392708000427CF /* QuotesPage.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BD2F0BCA2E37C1F000FB4A70 /* MoodMatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFEFF3D2E392708000427CF /* QuotesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		BD2F0BC12E37C1F000FB4A70 = {
 			isa = PBXGroup;
 			children = (
+				BDFEFF3D2E392708000427CF /* QuotesPage.swift */,
 				BD2F0BCC2E37C1F000FB4A70 /* MoodMatcher */,
 				BD2F0BCB2E37C1F000FB4A70 /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFEFF3E2E392708000427CF /* QuotesPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

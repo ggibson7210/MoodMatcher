@@ -11,22 +11,23 @@ struct ContentView: View {
    // NavigationView { ()
     var body: some View {
         ZStack{
-            Color(red: 176/255, green: 226/255, blue: 152/255)
+            Color(red: 243/255, green: 208/255, blue: 195/255)
                 .ignoresSafeArea()
             VStack {
                 
-                Text("Welcome to")
+                Text("Welcome to:")
                     .font(.title2)
                     .padding(0.5)
                 
-                    .navigationTitle("In The Zone")
+                    //.navigationTitle
+                Text("In The Zone")
                 
-                    .font(.title3)
+                    .font(.title)
                 Text("😎")
-                    .font(.system(size: 60))
+                    .font(.system(size: 70))
                 
                     .fontWeight(.bold)
-                    .padding(50) // Adjust size of the circle
+                    .padding(30) // Adjust size of the circle
                     .background(Color.green) // background color of circle
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.black, lineWidth: 2) //border of circle
@@ -35,7 +36,8 @@ struct ContentView: View {
                     .padding(15)
                 
                 Text("Pick a category below for recommendations:")
-                
+                    .font(.title3)
+                    .multilineTextAlignment(.center)
                 
                 ZStack{
                     VStack{
