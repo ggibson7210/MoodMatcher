@@ -19,7 +19,7 @@ struct ContentView: View {
                     .foregroundColor(Color.black)
                     .padding(.horizontal, 10.0)
                     .shadow(radius: 15)
-            Text( "MATCHER")
+            Text("MATCHER")
                 .font(.system(size: 45, weight: .bold, design: .rounded))
                 .foregroundColor(Color.black)
                 .padding(.horizontal, 10.0)
