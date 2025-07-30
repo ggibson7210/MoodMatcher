@@ -2,12 +2,14 @@
 //  QuotesPage.swift
 //  MoodMatcher
 //
-//  Created by Scholar on 7/29/25.
+//  Created by Scholar on 7/30/25.
 //
+
+import Foundation
 
 import SwiftUI
 
-struct QuotesPage: View {
+struct QuotePage: View {
     var body: some View {
         
             ZStack{
@@ -51,6 +53,7 @@ struct QuotesPage: View {
                     
                     HStack{
                         Text("- Success is built on what you do daily")
+                        
                         //.padding(.all)
                         
                             .font(.system(size: 17))
@@ -122,5 +125,5 @@ struct QuotesPage: View {
 }
    
 #Preview {
-    QuotesPage()
+    QuotePage()
 }
