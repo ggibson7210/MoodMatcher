@@ -10,7 +10,7 @@ import Foundation
 
 import SwiftUI
 
-struct ContentView: View {
+struct InTheZone: View {
    // NavigationView { ()
     var body: some View {
         ZStack{
@@ -97,5 +97,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    InTheZone()
 }
