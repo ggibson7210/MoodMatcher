@@ -1,5 +1,5 @@
 //
-//  SadSongsPage.swift
+//  InTheZoneSongsPage.swift
 //  MoodMatcher
 //
 //  Created by Scholar on 7/30/25.
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @Model
-class SadSong {
+class InTheZoneSong {
     var title: String
     var artist: String
 
@@ -19,27 +19,25 @@ class SadSong {
     }
 }
 
-struct SadSongsView: View {
-    @Query private var userSongs: [SadSong]
+struct InTheZoneSongsView: View {
+    @Query private var userSongs: [InTheZoneSong]
     @Environment(\.modelContext) private var modelContext
     @State private var showingAddSong = false
 
     let setSongs = [
-        SadSong(title: "Unwritten", artist: "Natasha Bedingfield"),
-        SadSong(title: "Adventure of a Lifetime", artist: "Coldplay"),
-        SadSong(title: "In My Room", artist: "Chance Pena"),
-        SadSong(title: "Fine Line", artist: "Harry Styles"),
-        SadSong(title: "Till Forever Falls Apart", artist: "Ashe, FINNEAS")
+        InTheZoneSong(title: "Lujon", artist: "Henry Mancini"),
+        InTheZoneSong(title: "Ladyfingers", artist: "Herb Alpert & The Tijuana Brass"),
+        InTheZoneSong(title: "Mary’s Theme", artist: "Stelvio Cipriani")
     ]
 
     var body: some View {
         NavigationView {
             ZStack {
-                Color(hue: 0.626, saturation: 0.391, brightness: 0.785)
+                Color(red: 0.6392, green: 0.7608, blue: 0.5137) // In The Zone background
                     .ignoresSafeArea()
 
                 VStack(spacing: 10) {
-                    Image(systemName: "music.note.list")
+                    Image(systemName: "brain.head.profile")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 50)
@@ -76,7 +74,7 @@ struct SadSongsView: View {
                     .background(Color.clear)
                 }
             }
-            .navigationTitle("The Blues: Tunes")
+            .navigationTitle("In the Zone")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
@@ -86,13 +84,13 @@ struct SadSongsView: View {
                             .font(.system(size: 18, weight: .bold))
                             .padding(12)
                             .background(Circle().fill(Color.white))
-                            .foregroundColor(Color(hue: 0.626, saturation: 0.391, brightness: 0.785))
+                            .foregroundColor(Color(red: 0.6392, green: 0.7608, blue: 0.5137))
                             .shadow(radius: 3)
                     }
                 }
             }
             .sheet(isPresented: $showingAddSong) {
-                AddSadSongView()
+                AddInTheZoneSongView()
             }
         }
     }
@@ -104,7 +102,7 @@ struct SadSongsView: View {
     }
 }
 
-struct AddSadSongView: View {
+struct AddInTheZoneSongView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) var modelContext
     @State private var title = ""
@@ -120,7 +118,7 @@ struct AddSadSongView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
-                        let newSong = SadSong(title: title, artist: artist)
+                        let newSong = InTheZoneSong(title: title, artist: artist)
                         modelContext.insert(newSong)
                         dismiss()
                     }
@@ -132,6 +130,6 @@ struct AddSadSongView: View {
 }
 
 #Preview {
-    SadSongsView()
-        .modelContainer(for: SadSong.self, inMemory: true)
+    InTheZoneSongsView()
+        .modelContainer(for: InTheZoneSong.self, inMemory: true)
 }

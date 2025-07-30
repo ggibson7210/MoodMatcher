@@ -1,5 +1,5 @@
 //
-//  SadSongsPage.swift
+//  BrainFogSongsPage.swift
 //  MoodMatcher
 //
 //  Created by Scholar on 7/30/25.
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @Model
-class SadSong {
+class BrainFogSong {
     var title: String
     var artist: String
 
@@ -19,27 +19,25 @@ class SadSong {
     }
 }
 
-struct SadSongsView: View {
-    @Query private var userSongs: [SadSong]
+struct BrainFogSongsView: View {
+    @Query private var userSongs: [BrainFogSong]
     @Environment(\.modelContext) private var modelContext
     @State private var showingAddSong = false
 
     let setSongs = [
-        SadSong(title: "Unwritten", artist: "Natasha Bedingfield"),
-        SadSong(title: "Adventure of a Lifetime", artist: "Coldplay"),
-        SadSong(title: "In My Room", artist: "Chance Pena"),
-        SadSong(title: "Fine Line", artist: "Harry Styles"),
-        SadSong(title: "Till Forever Falls Apart", artist: "Ashe, FINNEAS")
+        BrainFogSong(title: "Boredom (feat. Rex Orange County & Anna of the North)", artist: "Tyler, The Creator"),
+        BrainFogSong(title: "Go Your Own Way", artist: "Fleetwood Mac"),
+        BrainFogSong(title: "Ain’t It Fun", artist: "Paramore")
     ]
 
     var body: some View {
         NavigationView {
             ZStack {
-                Color(hue: 0.626, saturation: 0.391, brightness: 0.785)
+                Color(red: 0.9294, green: 0.7451, blue: 0.8941) // Brain Fog background
                     .ignoresSafeArea()
 
                 VStack(spacing: 10) {
-                    Image(systemName: "music.note.list")
+                    Image(systemName: "cloud.fog.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 50)
@@ -76,7 +74,7 @@ struct SadSongsView: View {
                     .background(Color.clear)
                 }
             }
-            .navigationTitle("The Blues: Tunes")
+            .navigationTitle("Brain Fog: Songs")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
@@ -86,13 +84,13 @@ struct SadSongsView: View {
                             .font(.system(size: 18, weight: .bold))
                             .padding(12)
                             .background(Circle().fill(Color.white))
-                            .foregroundColor(Color(hue: 0.626, saturation: 0.391, brightness: 0.785))
+                            .foregroundColor(Color(red: 0.9294, green: 0.7451, blue: 0.8941))
                             .shadow(radius: 3)
                     }
                 }
             }
             .sheet(isPresented: $showingAddSong) {
-                AddSadSongView()
+                AddBrainFogSongView()
             }
         }
     }
@@ -104,7 +102,7 @@ struct SadSongsView: View {
     }
 }
 
-struct AddSadSongView: View {
+struct AddBrainFogSongView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) var modelContext
     @State private var title = ""
@@ -120,7 +118,7 @@ struct AddSadSongView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
-                        let newSong = SadSong(title: title, artist: artist)
+                        let newSong = BrainFogSong(title: title, artist: artist)
                         modelContext.insert(newSong)
                         dismiss()
                     }
@@ -132,6 +130,6 @@ struct AddSadSongView: View {
 }
 
 #Preview {
-    SadSongsView()
-        .modelContainer(for: SadSong.self, inMemory: true)
+    BrainFogSongsView()
+        .modelContainer(for: BrainFogSong.self, inMemory: true)
 }
