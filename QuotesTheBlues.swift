@@ -1,5 +1,5 @@
 //
-//  Quotes.swift
+//  QuotesTheBlues.swift
 //  MoodMatcher
 //
 //  Created by Scholar on 7/30/25.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct Quotes: View {
+struct QuotesTheBlues: View {
     @State private var quotes: [String] = [
-        "Success is built on what you do daily",
-        "Life isn't about finding yourself, it's about creating yourself",
-        "Change is scary but so is staying the same",
-        "Avoiding a task takes as much mental energy as doing it",
-        "Studying is a privilege not a chore. There is a whole world of knowledge out there, and we have the opportunity to explore some of it. So change your mindset."
+        "“Life is made of so many partings welded together.” - Charles Dickens",
+        "“Out of difficulties grow miracles.” - Jean de La Bruyère",
+        "“It's OK not to be OK.” – Lindsey Kelk, I Heart New York",
+        "“May the flowers remind why the rain was so necessary” - Xan Oku",
+        "“May the flowers remind why the rain was so necessary” - Xan Oku"
     ]
     
     @State private var newQuote: String = ""
@@ -40,7 +40,7 @@ struct Quotes: View {
                             .font(.system(size: 40))
                     }
                     
-                    Text("to stay In The Zone and for inspiration:")
+                    Text("to uplift your mood:")
                         .font(.title3)
                         .padding()
                         .background(
@@ -100,7 +100,7 @@ struct Quotes: View {
     }
 }
 
-#Preview {
-    Quotes()
-}
 
+#Preview {
+    QuotesTheBlues()
+}
