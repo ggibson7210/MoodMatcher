@@ -16,14 +16,21 @@ struct QuotesPage: View {
                 ScrollView{
                     
                 VStack{
-                    Text("Quotes")
-                        .font(.system(size: 25))
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(hue: 0.261, saturation: 0.664, brightness: 0.322))
-                        .padding()
-                        .border(Color(hue: 0.235, saturation: 0.174, brightness: 0.889), width:3)
-                        .background(Color(hue: 0.222, saturation: 0.262, brightness: 0.77))
-                        .padding(15)
+                    HStack{
+                        
+                        Text("📝")
+                            .font(.system(size: 40))
+                        Text("Quotes")
+                            .font(.system(size: 25))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color(hue: 0.261, saturation: 0.664, brightness: 0.322))
+                            .padding()
+                            .border(Color(hue: 0.235, saturation: 0.174, brightness: 0.889), width:3)
+                            .background(Color(hue: 0.222, saturation: 0.262, brightness: 0.77))
+                            .padding(15)
+                        Text("📝")
+                            .font(.system(size: 40))
+                    }
                     
                     Text("to stay In The Zone and for inspiration:")
                         .font(.title3)
