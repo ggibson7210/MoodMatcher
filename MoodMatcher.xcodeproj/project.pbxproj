@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BDFEFF502E3A7659000427CF /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF4F2E3A7659000427CF /* Quotes.swift */; };
+		BDFEFF522E3A76E4000427CF /* QuotesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF512E3A76E4000427CF /* QuotesPage.swift */; };
+		BDFEFF542E3A885A000427CF /* TheBlues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF532E3A885A000427CF /* TheBlues.swift */; };
+		BDFEFF562E3A8D0B000427CF /* BrainFog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF552E3A8D0B000427CF /* BrainFog.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BD2F0BCA2E37C1F000FB4A70 /* MoodMatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFEFF4F2E3A7659000427CF /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		BDFEFF512E3A76E4000427CF /* QuotesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesPage.swift; sourceTree = "<group>"; };
+		BDFEFF532E3A885A000427CF /* TheBlues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBlues.swift; sourceTree = "<group>"; };
+		BDFEFF552E3A8D0B000427CF /* BrainFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainFog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +43,10 @@
 		BD2F0BC12E37C1F000FB4A70 = {
 			isa = PBXGroup;
 			children = (
+				BDFEFF552E3A8D0B000427CF /* BrainFog.swift */,
+				BDFEFF532E3A885A000427CF /* TheBlues.swift */,
+				BDFEFF512E3A76E4000427CF /* QuotesPage.swift */,
+				BDFEFF4F2E3A7659000427CF /* Quotes.swift */,
 				BD2F0BCC2E37C1F000FB4A70 /* MoodMatcher */,
 				BD2F0BCB2E37C1F000FB4A70 /* Products */,
 			);
@@ -119,6 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFEFF542E3A885A000427CF /* TheBlues.swift in Sources */,
+				BDFEFF562E3A8D0B000427CF /* BrainFog.swift in Sources */,
+				BDFEFF502E3A7659000427CF /* Quotes.swift in Sources */,
+				BDFEFF522E3A76E4000427CF /* QuotesPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
