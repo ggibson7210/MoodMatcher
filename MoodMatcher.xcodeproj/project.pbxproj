@@ -12,6 +12,7 @@
 		BDFEFF542E3A885A000427CF /* TheBlues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF532E3A885A000427CF /* TheBlues.swift */; };
 		BDFEFF562E3A8D0B000427CF /* BrainFog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF552E3A8D0B000427CF /* BrainFog.swift */; };
 		BDFEFF582E3A9003000427CF /* Cloud9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF572E3A9003000427CF /* Cloud9.swift */; };
+		BDFEFF5A2E3A9556000427CF /* QuotesTheBlues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF592E3A9556000427CF /* QuotesTheBlues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		BDFEFF532E3A885A000427CF /* TheBlues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBlues.swift; sourceTree = "<group>"; };
 		BDFEFF552E3A8D0B000427CF /* BrainFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainFog.swift; sourceTree = "<group>"; };
 		BDFEFF572E3A9003000427CF /* Cloud9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud9.swift; sourceTree = "<group>"; };
+		BDFEFF592E3A9556000427CF /* QuotesTheBlues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTheBlues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +47,7 @@
 		BD2F0BC12E37C1F000FB4A70 = {
 			isa = PBXGroup;
 			children = (
+				BDFEFF592E3A9556000427CF /* QuotesTheBlues.swift */,
 				BDFEFF572E3A9003000427CF /* Cloud9.swift */,
 				BDFEFF552E3A8D0B000427CF /* BrainFog.swift */,
 				BDFEFF532E3A885A000427CF /* TheBlues.swift */,
@@ -139,6 +142,7 @@
 			files = (
 				BDFEFF542E3A885A000427CF /* TheBlues.swift in Sources */,
 				BDFEFF562E3A8D0B000427CF /* BrainFog.swift in Sources */,
+				BDFEFF5A2E3A9556000427CF /* QuotesTheBlues.swift in Sources */,
 				BDFEFF502E3A7659000427CF /* Quotes.swift in Sources */,
 				BDFEFF522E3A76E4000427CF /* QuotesPage.swift in Sources */,
 				BDFEFF582E3A9003000427CF /* Cloud9.swift in Sources */,
