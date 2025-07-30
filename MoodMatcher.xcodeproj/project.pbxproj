@@ -6,28 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		BDFEFF502E3A7659000427CF /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF4F2E3A7659000427CF /* Quotes.swift */; };
-		BDFEFF522E3A76E4000427CF /* QuotesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF512E3A76E4000427CF /* QuotesPage.swift */; };
-		BDFEFF542E3A885A000427CF /* TheBlues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF532E3A885A000427CF /* TheBlues.swift */; };
-		BDFEFF562E3A8D0B000427CF /* BrainFog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF552E3A8D0B000427CF /* BrainFog.swift */; };
-		BDFEFF582E3A9003000427CF /* Cloud9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF572E3A9003000427CF /* Cloud9.swift */; };
-		BDFEFF5A2E3A9556000427CF /* QuotesTheBlues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFEFF592E3A9556000427CF /* QuotesTheBlues.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		BD2F0BCA2E37C1F000FB4A70 /* MoodMatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDFEFF4F2E3A7659000427CF /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
-		BDFEFF512E3A76E4000427CF /* QuotesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesPage.swift; sourceTree = "<group>"; };
-		BDFEFF532E3A885A000427CF /* TheBlues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBlues.swift; sourceTree = "<group>"; };
-		BDFEFF552E3A8D0B000427CF /* BrainFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainFog.swift; sourceTree = "<group>"; };
-		BDFEFF572E3A9003000427CF /* Cloud9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud9.swift; sourceTree = "<group>"; };
-		BDFEFF592E3A9556000427CF /* QuotesTheBlues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTheBlues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BD3E35432E3A5FE200752D73 /* Exceptions for "MoodMatcher" folder in "MoodMatcher" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BD2F0BC92E37C1F000FB4A70 /* MoodMatcher */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BD2F0BCC2E37C1F000FB4A70 /* MoodMatcher */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BD3E35432E3A5FE200752D73 /* Exceptions for "MoodMatcher" folder in "MoodMatcher" target */,
+			);
 			path = MoodMatcher;
 			sourceTree = "<group>";
 		};
@@ -280,6 +278,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMatcher/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +308,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMatcher/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

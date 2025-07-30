@@ -71,52 +71,68 @@ struct SwiftUIView: View {
     @State private var currentIndex = 0
     @State private var scores: [MoodType: Int] = [:]
     @State private var showResult = false
+    @State private var buttonColor: Color = (Color(hue: 0.91, saturation: 0.451, brightness: 0.568))
+
     
     
     var body: some View {
         
-        VStack {
-            Text("Take this quiz to figure out the mood that best relates to you!")
-                .font(.title)
-                .multilineTextAlignment(.center)
+        ZStack {
+            Color (red: 240/255, green: 230/255, blue: 220/255)
+                .ignoresSafeArea()
             
-            // display final result and allow user to restart quiz
-            if showResult {
-                let result = calculateResult ()
-                Text ("Your mood is: ")
-                    .font(.title)
-                    .padding(.bottom,4)
-                Text(moodDescription(result))
-                    .font(.largeTitle)
-                    .bold()
-                    .padding()
-                Button("Restart Quiz") {
-                    restartQuiz()
-                }
-                .padding()
-            } else {
-                Text(questions[currentIndex].text)
-                    .font(.title2)
-                    .padding()
+            VStack {
+                Text("Take a quiz to find the mood that best matches you!")
+                    .font(Font.custom("BRADLEY", size: 24))
+                  
+                    .multilineTextAlignment(.center)
+                //  .lineLimit(3)
+                    .padding(.horizontal, 30.0)
+                    .padding(.bottom, 100)
                 
-                //formatting for questions and answers
-                ForEach(questions[currentIndex].answers, id: \.text) {answer in
-                    Button(action: {
-                        answerSelected(answer)
-                    }) {
-                        Text(answer.text)
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(Color.blue.opacity(0.2))
-                            .cornerRadius(10)
-                            .padding(.horizontal)
+                // display final result and allow user to restart quiz
+                if showResult {
+                    let result = calculateResult ()
+                    Text ("Your mood is: ")
+                        .font(.title)
+                        .padding(.bottom,4)
+                    Text(moodDescription(result))
+                        .font(.largeTitle)
+                        .bold()
+                        .padding()
+                    Button("Restart Quiz") {
+                        restartQuiz()
                     }
-                    .padding(.vertical, 4)
+                    Text ("Go to \(moodDescription(result)) ")
+                    .padding()
+                } else {
+                    Text(questions[currentIndex].text)
+                        .font(.title2)
+                        .padding()
+                    
+                    //formatting for questions and answers
+                    ForEach(questions[currentIndex].answers, id: \.text) {answer in
+                        Button(action: {
+                            answerSelected(answer)
+                        }) {
+                            Text(answer.text)
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                              .background(Color.white.opacity (0.6))
+                                .foregroundColor(.black)
+                                .background(buttonColor)
+                                .cornerRadius(10)
+                                .padding(.horizontal)
+                        }
+                        .padding(.vertical, 4)
+                    }
                 }
             }
         }
+        
+   
         .animation(.easeInOut, value: currentIndex)
-        .padding()
+//        .padding()
         
     }
     
@@ -147,7 +163,7 @@ struct SwiftUIView: View {
     func moodDescription(_ mood: MoodType) -> String {
         switch mood {
         case .happy: return "Cloud 9 😇"
-        case .sad: return "Melancholy ☹️"
+        case .sad: return "The Blues ☹️"
         case .bored: return "Brain Fog 😵‍💫"
         case .productive: return "In the Zone 😎"
         }
@@ -165,3 +181,4 @@ struct SwiftUIView: View {
 #Preview {
     SwiftUIView()
 }
+
