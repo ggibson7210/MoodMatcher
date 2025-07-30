@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD99D2892E3A9BA8007CC3D9 /* QuotePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D2882E3A9BA8007CC3D9 /* QuotePage.swift */; };
+		BD99D28B2E3A9C32007CC3D9 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D28A2E3A9C32007CC3D9 /* Quotes.swift */; };
+		BD99D28D2E3A9C4F007CC3D9 /* QuotesTheBlues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D28C2E3A9C4F007CC3D9 /* QuotesTheBlues.swift */; };
+		BD99D28F2E3A9C6C007CC3D9 /* TheBlues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D28E2E3A9C6C007CC3D9 /* TheBlues.swift */; };
+		BD99D2912E3A9C8D007CC3D9 /* BrainFog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D2902E3A9C8D007CC3D9 /* BrainFog.swift */; };
+		BD99D2932E3A9C9E007CC3D9 /* Cloud9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D2922E3A9C9E007CC3D9 /* Cloud9.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BD2F0BCA2E37C1F000FB4A70 /* MoodMatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD99D2882E3A9BA8007CC3D9 /* QuotePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotePage.swift; sourceTree = "<group>"; };
+		BD99D28A2E3A9C32007CC3D9 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		BD99D28C2E3A9C4F007CC3D9 /* QuotesTheBlues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTheBlues.swift; sourceTree = "<group>"; };
+		BD99D28E2E3A9C6C007CC3D9 /* TheBlues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBlues.swift; sourceTree = "<group>"; };
+		BD99D2902E3A9C8D007CC3D9 /* BrainFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainFog.swift; sourceTree = "<group>"; };
+		BD99D2922E3A9C9E007CC3D9 /* Cloud9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,12 +60,12 @@
 		BD2F0BC12E37C1F000FB4A70 = {
 			isa = PBXGroup;
 			children = (
-				BDFEFF592E3A9556000427CF /* QuotesTheBlues.swift */,
-				BDFEFF572E3A9003000427CF /* Cloud9.swift */,
-				BDFEFF552E3A8D0B000427CF /* BrainFog.swift */,
-				BDFEFF532E3A885A000427CF /* TheBlues.swift */,
-				BDFEFF512E3A76E4000427CF /* QuotesPage.swift */,
-				BDFEFF4F2E3A7659000427CF /* Quotes.swift */,
+				BD99D2922E3A9C9E007CC3D9 /* Cloud9.swift */,
+				BD99D2902E3A9C8D007CC3D9 /* BrainFog.swift */,
+				BD99D28E2E3A9C6C007CC3D9 /* TheBlues.swift */,
+				BD99D28C2E3A9C4F007CC3D9 /* QuotesTheBlues.swift */,
+				BD99D28A2E3A9C32007CC3D9 /* Quotes.swift */,
+				BD99D2882E3A9BA8007CC3D9 /* QuotePage.swift */,
 				BD2F0BCC2E37C1F000FB4A70 /* MoodMatcher */,
 				BD2F0BCB2E37C1F000FB4A70 /* Products */,
 			);
@@ -138,12 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDFEFF542E3A885A000427CF /* TheBlues.swift in Sources */,
-				BDFEFF562E3A8D0B000427CF /* BrainFog.swift in Sources */,
-				BDFEFF5A2E3A9556000427CF /* QuotesTheBlues.swift in Sources */,
-				BDFEFF502E3A7659000427CF /* Quotes.swift in Sources */,
-				BDFEFF522E3A76E4000427CF /* QuotesPage.swift in Sources */,
-				BDFEFF582E3A9003000427CF /* Cloud9.swift in Sources */,
+				BD99D28D2E3A9C4F007CC3D9 /* QuotesTheBlues.swift in Sources */,
+				BD99D28F2E3A9C6C007CC3D9 /* TheBlues.swift in Sources */,
+				BD99D28B2E3A9C32007CC3D9 /* Quotes.swift in Sources */,
+				BD99D2932E3A9C9E007CC3D9 /* Cloud9.swift in Sources */,
+				BD99D2912E3A9C8D007CC3D9 /* BrainFog.swift in Sources */,
+				BD99D2892E3A9BA8007CC3D9 /* QuotePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

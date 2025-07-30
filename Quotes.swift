@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuotesPage: View {
+struct Quotes: View {
     @State private var quotes: [String] = [
         "Success is built on what you do daily",
         "Life isn't about finding yourself, it's about creating yourself",
@@ -101,6 +101,6 @@ struct QuotesPage: View {
 }
 
 #Preview {
-    QuotesPage()
+    Quotes()
 }
 
