@@ -1,5 +1,5 @@
 //
-//  QuotesTheBlues.swift
+//  QuotesInTheZone.swift
 //  MoodMatcher
 //
 //  Created by Scholar on 7/30/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuotesTheBlues: View {
+struct QuotesInTheZone: View {
     @State private var quotes: [String] = [
         "“Life is made of so many partings welded together.” - Charles Dickens",
         "“Out of difficulties grow miracles.” - Jean de La Bruyère",
@@ -20,7 +20,7 @@ struct QuotesTheBlues: View {
 
     var body: some View {
         ZStack {
-            Color(hue: 0.626, saturation: 0.391, brightness: 0.785)
+            Color(red: 0.6392156862745098, green: 0.7607843137254902, blue: 0.5137254901960784)
                 .ignoresSafeArea()
             
             ScrollView {
@@ -31,10 +31,10 @@ struct QuotesTheBlues: View {
                         Text("Quotes")
                             .font(.system(size: 25))
                             .fontWeight(.bold)
-                            .foregroundColor(Color(hue: 0.711, saturation: 0.807, brightness: 0.397))
+                            .foregroundColor(Color(.black))
                             .padding()
-                            .border(Color(hue: 0.696, saturation: 0.301, brightness: 0.662), width:3)
-                            .background(Color(red: 175/255, green: 180/255, blue: 222/255))
+                            .border(Color(hue: 0.235, saturation: 0.174, brightness: 0.889), width:3)
+                            .background(Color(hue: 0.222, saturation: 0.262, brightness: 0.77))
                             .padding(15)
                         Text("📝")
                             .font(.system(size: 40))
@@ -45,11 +45,11 @@ struct QuotesTheBlues: View {
                         .padding()
                         .background(
                             Capsule()
-                                .fill(Color(hue: 0.607, saturation: 0.159, brightness: 0.941))
+                                .fill(Color(hue: 0.236, saturation: 0.307, brightness: 0.923))
                         )
                         .overlay(
                             Capsule()
-                                .stroke(Color(hue: 0.666, saturation: 0.571, brightness: 0.884), lineWidth: 2)
+                                .stroke(Color(hue: 0.251, saturation: 0.356, brightness: 0.676), lineWidth: 2)
                         )
                         .shadow(radius: 2)
 
@@ -78,10 +78,10 @@ struct QuotesTheBlues: View {
                             Text("- \(quotes[index])")
                                 .font(.system(size: 17))
                                 .fontWeight(.bold)
-                                .foregroundColor(Color(red: 0.156, green: 0.079, blue: 0.388))
+                                .foregroundColor(Color(hue: 0.261, saturation: 0.664, brightness: 0.322))
                                 .padding()
-                                .border(Color(hue: 0.701, saturation: 0.412, brightness: 0.553), width: 3)
-                                .background(Color(hue: 0.606, saturation: 0.162, brightness: 0.848))
+                                .border(Color(hue: 0.235, saturation: 0.174, brightness: 0.889), width: 3)
+                                .background(Color(hue: 0.222, saturation: 0.262, brightness: 0.77))
                                 .padding(.horizontal)
                             
                             // Delete Button
@@ -102,5 +102,5 @@ struct QuotesTheBlues: View {
 
 
 #Preview {
-    QuotesTheBlues()
+    QuotesInTheZone()
 }

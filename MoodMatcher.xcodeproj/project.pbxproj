@@ -13,6 +13,8 @@
 		BD99D28F2E3A9C6C007CC3D9 /* TheBlues.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D28E2E3A9C6C007CC3D9 /* TheBlues.swift */; };
 		BD99D2912E3A9C8D007CC3D9 /* BrainFog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D2902E3A9C8D007CC3D9 /* BrainFog.swift */; };
 		BD99D2932E3A9C9E007CC3D9 /* Cloud9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D2922E3A9C9E007CC3D9 /* Cloud9.swift */; };
+		BD99D2952E3AA078007CC3D9 /* QuotesInTheZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D2942E3AA078007CC3D9 /* QuotesInTheZone.swift */; };
+		BD99D2972E3AA327007CC3D9 /* QuotesBrainFog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99D2962E3AA327007CC3D9 /* QuotesBrainFog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		BD99D28E2E3A9C6C007CC3D9 /* TheBlues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBlues.swift; sourceTree = "<group>"; };
 		BD99D2902E3A9C8D007CC3D9 /* BrainFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainFog.swift; sourceTree = "<group>"; };
 		BD99D2922E3A9C9E007CC3D9 /* Cloud9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud9.swift; sourceTree = "<group>"; };
+		BD99D2942E3AA078007CC3D9 /* QuotesInTheZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesInTheZone.swift; sourceTree = "<group>"; };
+		BD99D2962E3AA327007CC3D9 /* QuotesBrainFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesBrainFog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -64,6 +68,8 @@
 				BD99D2902E3A9C8D007CC3D9 /* BrainFog.swift */,
 				BD99D28E2E3A9C6C007CC3D9 /* TheBlues.swift */,
 				BD99D28C2E3A9C4F007CC3D9 /* QuotesTheBlues.swift */,
+				BD99D2962E3AA327007CC3D9 /* QuotesBrainFog.swift */,
+				BD99D2942E3AA078007CC3D9 /* QuotesInTheZone.swift */,
 				BD99D28A2E3A9C32007CC3D9 /* Quotes.swift */,
 				BD99D2882E3A9BA8007CC3D9 /* QuotePage.swift */,
 				BD2F0BCC2E37C1F000FB4A70 /* MoodMatcher */,
@@ -154,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD99D28D2E3A9C4F007CC3D9 /* QuotesTheBlues.swift in Sources */,
+				BD99D2972E3AA327007CC3D9 /* QuotesBrainFog.swift in Sources */,
+				BD99D2952E3AA078007CC3D9 /* QuotesInTheZone.swift in Sources */,
 				BD99D28F2E3A9C6C007CC3D9 /* TheBlues.swift in Sources */,
 				BD99D28B2E3A9C32007CC3D9 /* Quotes.swift in Sources */,
 				BD99D2932E3A9C9E007CC3D9 /* Cloud9.swift in Sources */,
