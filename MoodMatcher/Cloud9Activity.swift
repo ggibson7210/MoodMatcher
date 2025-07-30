@@ -1,5 +1,5 @@
 //
-//  HappyActivity.swift
+//  Cloud9Activity.swift
 //  MoodMatcher
 
 import SwiftData
@@ -66,6 +66,7 @@ struct HappyActivityListView: View {
                 .scrollContentBackground(.hidden)
                 
                 .navigationTitle("Cloud 9: Activities")
+                .padding(1)
                 .navigationBarItems(trailing: Button(action: {
                     addHappyActivity = true
                 }) { Image(systemName: "plus")

@@ -1,5 +1,5 @@
 //
-//  ProductiveActivity.swift
+//  InTheZoneActivity.swift
 //  MoodMatcher
 
 import SwiftData
@@ -66,6 +66,7 @@ struct ProductiveActivityListView: View {
                 .scrollContentBackground(.hidden)
                 
                 .navigationTitle("In the Zone: Activities")
+                .padding(1)
                 .navigationBarItems(trailing: Button(action: {
                     addProductiveActivity = true
                 }) { Image(systemName: "plus")

@@ -1,5 +1,5 @@
 //
-//  BoredActivity.swift
+//  BrainFogActivity.swift
 //  MoodMatcher
 
 import SwiftData
@@ -66,6 +66,7 @@ struct BoredActivityListView: View {
                 .scrollContentBackground(.hidden)
                 
                 .navigationTitle("Brain Fog: Activities")
+                .padding(1)
                 .navigationBarItems(trailing: Button(action: {
                     addBoredActivity = true
                 }) { Image(systemName: "plus")
