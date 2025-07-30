@@ -76,7 +76,7 @@ struct SadSongsView: View {
                     .background(Color.clear)
                 }
             }
-            .navigationTitle("The Blues: Tunes")
+            .navigationTitle("Hello The Blues: Tunes")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {

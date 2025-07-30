@@ -21,9 +21,22 @@
 		BDFEFF552E3A8D0B000427CF /* BrainFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainFog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BD3E35432E3A5FE200752D73 /* Exceptions for "MoodMatcher" folder in "MoodMatcher" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BD2F0BC92E37C1F000FB4A70 /* MoodMatcher */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BD2F0BCC2E37C1F000FB4A70 /* MoodMatcher */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BD3E35432E3A5FE200752D73 /* Exceptions for "MoodMatcher" folder in "MoodMatcher" target */,
+			);
 			path = MoodMatcher;
 			sourceTree = "<group>";
 		};
@@ -272,6 +285,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMatcher/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +315,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMatcher/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
