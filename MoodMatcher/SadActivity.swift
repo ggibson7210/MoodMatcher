@@ -1,12 +1,12 @@
 //
-//  BoredActivity.swift
+//  SadActivity.swift
 //  MoodMatcher
 
 import SwiftData
 import SwiftUI
 
 @Model
-class BoredActivity {
+class SadActivity {
     var boredName: String
     var boredDescription: String
     
@@ -16,17 +16,17 @@ class BoredActivity {
     }
 }
 
-struct BoredActivityListView: View {
-    @Query private var boredActivities: [BoredActivity]
+struct SadActivityListView: View {
+    @Query private var boredActivities: [SadActivity]
     @Environment(\.modelContext) private var modelContext
     
     @State private var addBoredActivity = false
-    @State private var editBoredActivity: BoredActivity?
+    @State private var editBoredActivity: SadActivity?
     
     let setBoredActivities = [
-        BoredActivity(boredName: "Meditation & Yoga", boredDescription: "Release all your energy 🤩"),
-        BoredActivity(boredName: "Get lost in a new book!", boredDescription: "Or, a new show, recipe, or something else 🧑‍🍳"),
-        BoredActivity(boredName: "Connect with your loved ones", boredDescription: "Start a conversation or plan a meet-up 💜")
+        SadActivity(boredName: "Meditation & Yoga", boredDescription: "Release all your energy 🤩"),
+        SadActivity(boredName: "Get lost in a new book!", boredDescription: "Or, a new show, recipe, or something else 🧑‍🍳"),
+        SadActivity(boredName: "Connect with your loved ones", boredDescription: "Start a conversation or plan a meet-up 💜")
     ]
     
     var body: some View {
@@ -39,7 +39,7 @@ struct BoredActivityListView: View {
                         Text("Set Activities")
                             .font(.headline)
                     }
-                    ForEach(setBoredActivities) {activity in
+                    ForEach(setSadActivities) {activity in
                         HStack{
                             Text (activity.boredName)
                                 .font(.headline)
@@ -57,30 +57,30 @@ struct BoredActivityListView: View {
                             Text (activity.boredDescription)
                         }
                         .onTapGesture {
-                            editBoredActivity = activity
+                            editSadActivity = activity
                         }
                     }
-                    .onDelete(perform: deleteBoredActivity)
+                    .onDelete(perform: deleteSadActivity)
                 }
                 .background(Color.clear)
                 .scrollContentBackground(.hidden)
                 
                 .navigationTitle("Brain Fog: Activities")
                 .navigationBarItems(trailing: Button(action: {
-                    addBoredActivity = true
+                    addSadActivity = true
                 }) { Image(systemName: "plus")
                 })
-                .sheet(item: $editBoredActivity) { activity in
-                    EditBoredActivityView(boredActivity: activity)
+                .sheet(item: $editSadActivity) { activity in
+                    EditSadActivityView(boredActivity: activity)
                 }
-                .sheet(isPresented: $addBoredActivity) {
-                    AddBoredActivityView()
+                .sheet(isPresented: $addSadActivity) {
+                    AddSadActivityView()
                 }
             }
         }
     }
     
-    func deleteBoredActivity(at offsets: IndexSet) {
+    func deleteSadActivity(at offsets: IndexSet) {
         for index in offsets {
             modelContext.delete(boredActivities[index])
         }
@@ -88,7 +88,7 @@ struct BoredActivityListView: View {
 }
 
 
-struct AddBoredActivityView: View {
+struct AddSadActivityView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) var modelContext
     
@@ -103,7 +103,7 @@ struct AddBoredActivityView: View {
             }
             .navigationTitle("Add Activity")
             .navigationBarItems(trailing: Button("Save") {
-                let newActivity = BoredActivity(boredName: boredName, boredDescription: boredDescription)
+                let newActivity = SadActivity(boredName: boredName, boredDescription: boredDescription)
                 modelContext.insert(newActivity)
                 dismiss()
             }.disabled(boredName.isEmpty || boredDescription.isEmpty))
@@ -114,7 +114,7 @@ struct AddBoredActivityView: View {
 struct EditBoredActivityView: View {
     @Environment(\.dismiss) var dismiss
 
-    @Bindable var boredActivity: BoredActivity
+    @Bindable var boredActivity: SadActivity
 
     var body: some View {
         NavigationView {
@@ -130,18 +130,19 @@ struct EditBoredActivityView: View {
     }
 }
 
-struct BoredActivities: App {
+struct SadActivities: App {
     var body: some Scene {
         WindowGroup {
-            BoredActivityListView()
+            SadActivityListView()
         }
-        .modelContainer(for: BoredActivity.self)
+        .modelContainer(for: SadActivity.self)
     }
 }
 
 #Preview {
-    BoredActivityListView()
-        .modelContainer(for: BoredActivity.self, inMemory: true)
+    SadActivityListView()
+        .modelContainer(for: SadActivity.self, inMemory: true)
 }
+
 
 
