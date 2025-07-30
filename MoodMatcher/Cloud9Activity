@@ -65,7 +65,7 @@ struct HappyActivityListView: View {
                 .background(Color.clear)
                 .scrollContentBackground(.hidden)
                 
-                .navigationTitle("In the Zone: Activities")
+                .navigationTitle("Cloud 9: Activities")
                 .navigationBarItems(trailing: Button(action: {
                     addHappyActivity = true
                 }) { Image(systemName: "plus")
